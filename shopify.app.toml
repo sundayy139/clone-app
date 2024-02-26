@@ -1,0 +1,24 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "1e7afc20c35246a374136731924fb3dc"
+name = "clone-app "
+application_url = "https://notre-ccd-name-application.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "sundayy-menu-test.myshopify.com"
+include_config_on_deploy = true
+
+[auth]
+redirect_urls = [
+  "https://notre-ccd-name-application.trycloudflare.com/auth/callback",
+  "https://notre-ccd-name-application.trycloudflare.com/auth/shopify/callback",
+  "https://notre-ccd-name-application.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-01"
+
+[pos]
+embedded = false
